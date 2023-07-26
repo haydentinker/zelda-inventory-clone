@@ -1,0 +1,86 @@
+video{
+    position:absolute;
+    height:600px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: .3;
+}
+body{
+    margin: 0;
+    padding:0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    border:5px solid red;
+    display:grid;
+    grid-template-columns: 550px 1fr;
+    grid-template-rows: 86px 1fr 58px;
+}
+.top{
+grid-column-end: span 2;
+display: grid;
+grid-template-columns: 228px 1fr 100px 1fr 228px;
+}
+.hearts{
+    background:yellow;
+    padding-top:20px;
+    padding-left:47px;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+}
+.heart{
+    background:red;
+    width:15px;
+    height:12px;
+    margin-bottom:4px;
+    margin-right:1.5px;
+}
+.left_button{
+    align-self: end;
+    justify-self:end;
+    margin-bottom: 16px;
+    margin-right:12px;
+}
+.right_button{
+    align-self: end;
+    margin-bottom: 16px;
+    margin-right:12px;
+}
+.rupees{
+    align-self: center;
+    justify-self: end;
+    margin-right:60px;
+}
+.location{
+    align-self:center;
+    margin-left:18px;
+}
+.left{
+
+}
+.inventory_nav{
+    height:80px;
+    
+}
+.title{
+    text-align:center;
+    color:white;
+    height:30px;
+    padding-left:50px;
+    padding-top:15px;
+}
+.right{
+
+}
+.bottom{
+grid-column-end: span 2;
+}
